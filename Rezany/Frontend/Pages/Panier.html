@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="../Js/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" href="../Css/bootstrap.min.css" />
+    <script src="../Js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../Css/Panier.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+          <nav class="navbar navbar-expand-md navbar-light">
+
+      <a class="navbar-brand" href="#!">
+        <img src="../Img/icon.png" height="80" alt="mdb logo">
+      </a>
+    
+      <!-- Collapse button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav1"
+        aria-controls="basicExampleNav1" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <!-- Breadcrumbs -->
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a class="waves-effect" href="#!">Homme</a></li>
+        <li class="breadcrumb-item"><a class="waves-effect" href="#!">Femmes</a></li>
+        <li class="breadcrumb-item active"><a class="waves-effect" href="#!">Enfants</a></li>
+        <li class="breadcrumb-item active"><a class="waves-effect" href="#!">Maison</a></li>
+      </ol>
+      <!-- Breadcrumbs -->
+    
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="basicExampleNav1">
+    
+               <!-- Right -->
+               <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a href="#!" class="nav-link navbar-link-2 waves-effect">
+                    <span class="badge badge-pill red"><img src="../Img/panier.png">1</span>
+                    <i class="fas fa-shopping-cart pl-0"></i>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="Login.html" class="nav-link waves-effect">
+                    Sign in
+                  </a>
+                </li>
+                <li class="nav-item pl-2 mb-2 mb-md-0">
+                  <a href="Registration.html" type="button"
+                    class="btn btn-outline-info btn-md btn-rounded btn-navbar waves-effect waves-light">Sign up</a>
+                </li>
+              </ul>
+    
+      </div>
+      <!-- Links -->
+    
+    </nav>
+    <!-- Navbar -->
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-light">
+    
+      <!-- Collapse button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav9"
+        aria-controls="basicExampleNav9" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="basicExampleNav9">
+    
+        <form class="navbar-search pl-0 ml-auto" action="">
+          <div class="input-group mb-0">
+            <div class="input-group-prepend">
+              <a href="#!" class="input-icon d-flex align-items-center" type="button"><i
+                  class="fas fa-search text-white mx-3"></i></a>
+              <input class="form-control white-text rgba-black-light border-0 z-depth-0 pl-5" type="text"
+                placeholder="Search" aria-label="Search">
+            </div>
+          </div>
+        </form>
+    
+      </div>
+      <!-- Links -->
+    
+    </nav></header>
+
+    <section>
+      <article>
+        <table class="table">
+          <thead>
+            <tr>
+              <td scope="col" class="panier-td">Article</td>
+              <td scope="col" class="panier-td">Prix</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Vetement 1</td>
+              <td class="border-lign">12,50€</td>
+            </tr>
+            <tr>
+              <td>Vetement 2</td>
+              <td class="border-lign">32,50€</td>
+            </tr>
+            <tr>
+              <td>Vetement 3 - avec plusieurs mot pour choppé masse monde</td>
+              <td class="border-lign">89,99€</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td scope="col" class="panier-td">Transporteur</td>
+              <td class="border-lign">89,99€</td>
+            </tr>
+            <tr>
+              <td scope="col" class="panier-td">Total</td>
+              <td class="border-lign">89,99€</td>
+            </tr>
+            <tr>
+              <th scope="col"></th>
+              <td class="panier">
+                <a href="Home.html" class="panier-sold">Payer</a
+                ><a href="Home.html" class="panier-sold">Annuler</a>
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+      </article>
+    </section>
+  </body>
+</html>
