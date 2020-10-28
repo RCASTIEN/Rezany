@@ -6,147 +6,137 @@
     <script src="../Js/jquery-3.5.1.js"></script>
     <link rel="stylesheet" href="../Css/bootstrap.min.css" />
     <script src="../Js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="../Css/Registration.css" />
+    <link rel="stylesheet" href="../Css/Dashbord.css" />
+    <script src="../Js/dashboard.js"></script>
     <title>Document</title>
   </head>
   <body>
-    <header>    <nav class="navbar navbar-expand-md navbar-light">
+    <header>
+      <nav class="navbar navbar-expand-md navbar-light">
+        <a class="navbar-brand" href="#!">
+          <img src="../Img/icon.png" height="80" alt="mdb logo" />
+        </a>
 
-      <a class="navbar-brand" href="#!">
-        <img src="../Img/icon.png" height="80" alt="mdb logo">
-      </a>
-    
-      <!-- Collapse button -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav1"
-        aria-controls="basicExampleNav1" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    
-      <!-- Breadcrumbs -->
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a class="waves-effect" href="#!">Homme</a></li>
-        <li class="breadcrumb-item"><a class="waves-effect" href="#!">Femmes</a></li>
-        <li class="breadcrumb-item active"><a class="waves-effect" href="#!">Enfants</a></li>
-        <li class="breadcrumb-item active"><a class="waves-effect" href="#!">Maison</a></li>
-      </ol>
-      <!-- Breadcrumbs -->
-    
-      <!-- Links -->
-      <div class="collapse navbar-collapse" id="basicExampleNav1">
-    
-              <!-- Right -->
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                  <a href="#!" class="nav-link navbar-link-2 waves-effect">
-                    <span class="badge badge-pill red"><img src="../Img/panier.png">1</span>
-                    <i class="fas fa-shopping-cart pl-0"></i>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="Login.html" class="nav-link waves-effect">
-                    Sign in
-                  </a>
-                </li>
-                <li class="nav-item pl-2 mb-2 mb-md-0">
-                  <a href="Registration.html" type="button"
-                    class="btn btn-outline-info btn-md btn-rounded btn-navbar waves-effect waves-light">Sign up</a>
-                </li>
-              </ul>
-    
-      </div>
-      <!-- Links -->
-    
-    </nav>
-    <!-- Navbar -->
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-md navbar-light">
-    
-      <!-- Collapse button -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav9"
-        aria-controls="basicExampleNav9" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    
-      <!-- Links -->
-      <div class="collapse navbar-collapse" id="basicExampleNav9">
-    
-        <form class="navbar-search pl-0 ml-auto" action="">
-          <div class="input-group mb-0">
-            <div class="input-group-prepend">
-              <a href="#!" class="input-icon d-flex align-items-center" type="button"><i
-                  class="fas fa-search text-white mx-3"></i></a>
-              <input class="form-control white-text rgba-black-light border-0 z-depth-0 pl-5" type="text"
-                placeholder="Search" aria-label="Search">
-            </div>
-          </div>
-        </form>
-    
-      </div>
-      <!-- Links -->
-    
-    </nav></header>
-    <div>
-      <section>
-        <div class="d-flex" id="wrapper">
-          <!-- Sidebar -->
-          <div class="bg-light border-right" id="sidebar-wrapper">
-            <div class="sidebar-heading">Dashboard</div>
-            <div class="list-group list-group-flush">
-              <a
-                href="#"
-                class="list-group-item list-group-item-action bg-light"
-                >Compte</a
-              >
-              <a
-                href="#"
-                class="list-group-item list-group-item-action bg-light"
-                >Ajout de compte</a
-              >
-              <a
-                href="#"
-                class="list-group-item list-group-item-action bg-light"
-                >Historique</a
-              >
-              <a
-                href="#"
-                class="list-group-item list-group-item-action bg-light"
-                >Préférences</a
-              >
-              <a
-                href="#"
-                class="list-group-item list-group-item-action bg-light"
-                >Notification</a
-              >
-              <a
-                href="#"
-                class="list-group-item list-group-item-action bg-light"
-                >Confidentialité / sécurité</a
-              >
-            </div>
-          </div>
-          <!-- /#sidebar-wrapper -->
+        <!-- Collapse button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#basicExampleNav1"
+          aria-controls="basicExampleNav1"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-          <!-- Page Content -->
-          <div id="page-content-wrapper">
-            <div class="container-fluid">
-              <h1 class="mt-4">Dashboard USER</h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-                voluptas odio, quia sunt aut est nemo voluptate consequatur
-                provident ducimus fugiat maiores cumque iste itaque molestias
-                similique quam, ipsa aliquam?
-              </p>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Laboriosam deleniti nam similique ad quam, facere fugit alias
-                rerum suscipit, nobis error totam officia temporibus doloremque
-                earum accusantium fuga! Dolorum, reprehenderit!
-              </p>
-            </div>
-          </div>
-          <!-- /#page-content-wrapper -->
+        <!-- Breadcrumbs -->
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a class="waves-effect" href="#!">Homme</a>
+          </li>
+          <li class="breadcrumb-item">
+            <a class="waves-effect" href="#!">Femmes</a>
+          </li>
+          <li class="breadcrumb-item active">
+            <a class="waves-effect" href="#!">Enfants</a>
+          </li>
+          <li class="breadcrumb-item active">
+            <a class="waves-effect" href="#!">Maison</a>
+          </li>
+        </ol>
+        <!-- Breadcrumbs -->
+
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="basicExampleNav1">
+          <!-- Right -->
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="#!" class="nav-link navbar-link-2 waves-effect">
+                <span class="badge badge-pill red"
+                  ><img src="../Img/panier.png" />1</span
+                >
+                <i class="fas fa-shopping-cart pl-0"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="Login.html" class="nav-link waves-effect"> Sign in </a>
+            </li>
+            <li class="nav-item pl-2 mb-2 mb-md-0">
+              <a
+                href="Registration.html"
+                type="button"
+                class="btn btn-outline-info btn-md btn-rounded btn-navbar waves-effect waves-light"
+                >Sign up</a
+              >
+            </li>
+          </ul>
         </div>
-      </section>
+        <!-- Links -->
+      </nav>
+      <!-- Navbar -->
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-md navbar-light">
+        <!-- Collapse button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#basicExampleNav9"
+          aria-controls="basicExampleNav9"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="basicExampleNav9">
+          <form class="navbar-search pl-0 ml-auto" action="">
+            <div class="input-group mb-0">
+              <div class="input-group-prepend">
+                <a
+                  href="#!"
+                  class="input-icon d-flex align-items-center"
+                  type="button"
+                  ><i class="fas fa-search text-white mx-3"></i
+                ></a>
+                <input
+                  class="form-control white-text rgba-black-light border-0 z-depth-0 pl-5"
+                  type="text"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- Links -->
+      </nav>
+    </header>
+    <div class="nav-btn">Menu Admin</div>
+    <div class="sidebar">
+      <div class="nav-dashbord">
+        <ul>
+          <li class="active"><a href="DashboardUser.html">Dashboard</a></li>
+          <li><a href="./Dashboard/DashboardHistory.html">Historique</a></li>
+          <li><a href="./Dashboard/DashboardNotif.html">Notification</a></li>
+          <li>
+            <a href="./Dashboard/DashboardSécu.html"
+              >Confidentialité / sécurité</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <div class="main-dashbord">
+        <h1 class="mt-4">Dashboard User</h1>
+        <div class="panel-wrapper">
+          <div class="panel-head">Name</div>
+          <p class="panel-body">Lorem ipsum dolor</p>
+        </div>
+      </div>
     </div>
   </body>
 </html>
