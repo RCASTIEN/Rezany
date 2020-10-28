@@ -1,255 +1,199 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Css/article.css">
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="../Js/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" href="../Css/bootstrap.min.css" />
+    <script src="../Js/bootstrap.min.js"></script>
+    <script src="../Js/poppers.min.js"></script>
+    <title>Article2</title>
+  </head>
+  <style>
+    /*@media screen and 
+    (min-width: 450px) and (max-width: 800px){*/
 
-    <style>
-        .background{
-           /* background-image:url(https://i.pinimg.com/564x/a9/6f/9d/a96f9d22a73d08a51f53c0fb728c1b39.jpg);*/
-            height: 800px;
-            /*background-color:rgb(211, 152, 152);*/
-            
+    .box1 {
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      margin: 100px auto;
+      width: 70%;
+      padding: 20px 0;
+      flex-wrap: wrap;
+    }
 
+    /*.box2{
+        display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-right: 100px;
+  padding: 20px;
 
-        }
-        .menu{ display:flex;
-            justify-content: space-between;
-            
-        }
+}*/
+
+    .box3 {
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      margin: 100px auto;
+      width: 70%;
+      padding: 20px;
+      flex-wrap: wrap;
+    }
+    .card {
+      width: 100%;
+      margin: 30px 0;
+    }
+
+    @media screen and (min-width: 600px) {
+      .card {
+        width: 30%;
+      }
+    }
+    
+    .pied{
+        width: auto;
+        height: 125px;
+        background-color:black ;
+        border: darkblue;
+        color: blanchedalmond;
+        
+        
+    }
+    .f1{
+        padding: 40px;
+        float: left;
        
-        .a1{
-            color:white;
-            border: solid;
-            border-width:2px; 
-           height: 50px;
-           width: 250px;
-           text-align: center;
-            border-color: black; 
-            background-color: black;
-            border-radius: 10px;
-            box-shadow:4px 4px 3px grey;
-        
-            
-           
-
-        }
-        #c{
-            color: blanchedalmond;
-            
-        }
-        .a2{
-            color:white;
-            border: solid;
-            border-width:2px; 
-           height: 50px;
-           width: 250px;
-           text-align: center;
-            border-color: black; 
-            background-color: black;
-            border-radius: 10px;
-            box-shadow:4px 4px 3px grey;
-           
-           
-
-        }
-        .a3{
-            color:white;
-            border: solid;
-            border-width:2px; 
-           height: 50px;
-           width: 250px;
-           text-align: center;
-            border-color: black; 
-            background-color: black;
-            border-radius: 10px;
-            box-shadow:4px 4px 3px grey;
-            
-           
-
-        }
-        .a4{
-            color:white;
-            border: solid;
-            border-width:2px; 
-           height: 50px;
-           width: 250px;
-           text-align: center;
-            border-color: black; 
-            background-color: black;
-            border-radius: 10px;
-            box-shadow:4px 4px 3px grey;
-           
-           
-
-        }
-        .a5{
-            color:white;
-            border: solid;
-            border-width:2px; 
-           height: 50px;
-           width: 250px;
-           text-align: center;
-            border-color: black; 
-            background-color: black;
-            border-radius: 10px;
-            box-shadow:4px 4px 3px grey;};
-           /* .images{
-                display: flex;
-                justify-content: space-between;
-            }*/
+    }
+    .f3 {
+      float: right;
+      color: black;
+      padding: 40px;
+     
       
-           
-
-        
+    }
+    #p{
+        color:blanchedalmond;
        
-        #femme{
-            margin: 10px;
-            padding: 50px;
-            width: 200px;
-            height: 100px;
-           
-            box-shadow: indianred;
-            display: flex;
-                justify-content: space-between;
-            
-            
-        }
-      
-        .button{
-            
-           display: flex;
-            justify-content: space-between;
-        }
-        
-        #A{
-            width: 200px;
-            height: 50px;
-            margin-right: 30px;
-         
-           
-        }
-        #B{
-            width: 200px;
-            height: 50px;
-           
-           
-        }
-        #C{
-            width: 200px;
-            height: 50px;
-            margin-left: 50px;
-            
-        }
-      
-        .box1{
-            display: flex;
-            justify-content: space-between;
-        }
-        .box2{
-            display: flex;
-            justify-content: space-between;
-        }
-        .box3{
-            display: flex;
-            justify-content: space-between;
-        }
-        .box4{
-            display: flex;
-            justify-content: space-between;
-        }
-        .box5{
-            display: flex;
-            justify-content: space-between;
-        }
- 
-        
-    footer{
+    }
 
-    width: 100%;
-   
-    border-top: grey solid 2px; 
-    position: absolute;
-    text-align: center;
-    display: block;
+  </style>
 
-   
+  <body>
+    <div class="box1">
+      <div class="card">
+        <img
+          src="https://chapeau.bon-clic-bon-genre.fr/photo/folar4_191101161334.jpg"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Chapeau</h5>
+          <p class="card-text">50$</p>
+        </div>
+      </div>
 
-}
-#homme{
-text-align: center;
-padding: 10px;
-margin: 10px;
- padding: 50px;
- width: 300px;
-  height: 250px;
-           
- box-shadow: indianred;
- display: flex;
-justify-content: space-between;
-            
-            
+      <div class="card">
+        <img
+          src="https://media.idkids.fr/media/productstorage/images/okaidi/0087924/thumbs/0155945_800.jpg"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Pantallon</h5>
+          <p class="card-text">25$</p>
+        </div>
+      </div>
 
-}
-#H{
-    color: honeydew;
-}
-.container{
-    padding: 50px;
-  
-    
-}
-         
-    </style>
+      <div class="card">
+        <img
+          src="https://www.cdiscount.com/pdt2/8/7/7/1/700x700/mp16077877/rw/manteau-camel-mi-long-a-col-revers.jpg"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Menteau</h5>
+          <p class="card-text">70$</p>
+        </div>
+      </div>
+    </div>
+    <div class="box3">
+      <div class="card">
+        <img
+          src="https://www.luzaka.com/media/catalog/product/cache/1/image/1000x1000/9df78eab33525d08d6e5fb8d27136e95/4/0/40567_3.jpg"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Montre</h5>
+          <p class="card-text">170$</p>
+        </div>
+      </div>
 
-    <title>Article</title>
-</head>
-<body class="background">
-    <div class="menu">
-        <div class="a1">
-            <select name="hommme" id="hommme"> 
-  <p id="H">Homme</p>
-  <option value="chaussure">Chaussure</option>
-  <option value="chaussure">Pantallon</option>
-  <option value="chaussure">Haut</option>
-  <option value="chaussure">Accessoire</option>
-</select>
+      <div class="card">
+        <img
+          src="https://www.histoiredestyle.com/wp-content/uploads/2019/09/20190915_185535-979x1024.jpg"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Bottes</h5>
+          <p class="card-text">100$</p>
+        </div>
+      </div>
 
-</div>
-<div class="a2">
-    <a id="c" href="">Femme</a>
-  </div>
-  <div class="a3">
-    <a id="c"href="">Maison</a>
-  </div>
- 
-   </div>
-   <div class="container">
-   
-<div class="box1">
-    <a href="" ><img id="homme" src="https://chapeau.bon-clic-bon-genre.fr/photo/folar4_191101161334.jpg"/></a>
-    <a href="" ><img id="homme" src="https://www.ccvmode.com/109113-product_zoom_default/baskets-er334-femme-gris.jpg"/></a>
-    <a href="" ><img id="homme" src="https://media.idkids.fr/media/productstorage/images/okaidi/0087924/thumbs/0155945_800.jpg"/></a>
-    
-  </div>
-  <div class="box2">
-    
-    <a href="" ><img id="homme" src="https://img.t-a-o.com/medias/sys_master/images/h7f/hbc/11047332544542/95513_02285_A_Tao-WorkingFormat_1200x1200.jpg"/></a>
-    <a href="" ><img id="homme" src="https://www.cdiscount.com/pdt2/1/1/1/1/700x700/mp18251111/rw/chaussures-a-talons-hauts-pour-femmes-sexy-en-form.jpg"/></a>
-    <a href="" ><img id="homme" src="https://www.angatrade.com/13251-large_default/basket-paillettes-femme-mode.jpg"/></a>
-</div>
+      <div class="card">
+        <img
+          src="https://img.t-a-o.com/medias/sys_master/images/h7f/hbc/11047332544542/95513_02285_A_Tao-WorkingFormat_1200x1200.jpg"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Jupe</h5>
+          <p class="card-text">50$</p>
+        </div>
+      </div>
+    </div>
+    <div class="box3">
+      <div class="card">
+        <img
+          src="https://laparisiennebijoux.com/wp-content/uploads/2018/02/collier-femme-ras-du-cou-tendance.jpg"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <h5 class="card-title">collier</h5>
+          <p class="card-text">17$</p>
+        </div>
+      </div>
 
+      <div class="card">
+        <img
+          src="https://www.cdiscount.com/pdt2/8/9/2/1/700x700/hao2009823137892/rw/echarpe-chale-femme-cachemire-chaud-automne-hiver.jpg"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Écharpe</h5>
+          <p class="card-text">10$</p>
+        </div>
+      </div>
 
-
-</div>
-
-
-</div>
-<div class="pied"></div>
-</body>
-
-<footer>
-
-</footer>
+      <div class="card">
+        <img
+          src="https://www.cdiscount.com/pdt2/1/1/1/1/700x700/mp18251111/rw/chaussures-a-talons-hauts-pour-femmes-sexy-en-form.jpg"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Talon</h5>
+          <p class="card-text">50$</p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <footer>
+    <div class="pied">
+      <p class="f1">
+        Copyright &copy 2020-2021 - tous les droits reserves
+<div class="f3">
+        <a id="p"href="">FAQ| </a>
+        <a id="p"href=""> Contact| </a>
+        <a id="p"href=""> Mentions Légales </a>
+    </div>
+      </p>
+    </div>
+  </footer>
 </html>
