@@ -6,12 +6,15 @@
     <script src="../Js/jquery-3.5.1.js"></script>
     <link rel="stylesheet" href="../Css/bootstrap.min.css" />
     <script src="../Js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../Css/Header.css" />
     <link rel="stylesheet" href="../Css/Dashbord.css" />
     <script src="../Js/dashboard.js"></script>
     <title>Document</title>
   </head>
   <body>
     <header>
+      <!-- -->
+
       <nav class="navbar navbar-expand-md navbar-light">
         <a class="navbar-brand" href="#!">
           <img src="../Img/icon.png" height="80" alt="mdb logo" />
@@ -32,18 +35,10 @@
 
         <!-- Breadcrumbs -->
         <ol class="breadcrumb">
-          <li class="breadcrumb-item">
-            <a class="waves-effect" href="#!">Homme</a>
-          </li>
-          <li class="breadcrumb-item">
-            <a class="waves-effect" href="#!">Femmes</a>
-          </li>
-          <li class="breadcrumb-item active">
-            <a class="waves-effect" href="#!">Enfants</a>
-          </li>
-          <li class="breadcrumb-item active">
-            <a class="waves-effect" href="#!">Maison</a>
-          </li>
+          <li class="breadcrumb-item"><a href="#!">Homme</a></li>
+          <li class="breadcrumb-item"><a href="#!">Femmes</a></li>
+          <li class="breadcrumb-item active"><a href="#!">Enfants</a></li>
+          <li class="breadcrumb-item active"><a href="#!">Maison</a></li>
         </ol>
         <!-- Breadcrumbs -->
 
@@ -74,7 +69,7 @@
         </div>
         <!-- Links -->
       </nav>
-      <!-- Navbar -->
+
       <!-- Navbar -->
       <nav class="navbar navbar-expand-md navbar-light">
         <!-- Collapse button -->
@@ -90,27 +85,20 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <!-- Links -->
-        <div class="collapse navbar-collapse" id="basicExampleNav9">
-          <form class="navbar-search pl-0 ml-auto" action="">
-            <div class="input-group mb-0">
-              <div class="input-group-prepend">
-                <a
-                  href="#!"
-                  class="input-icon d-flex align-items-center"
-                  type="button"
-                  ><i class="fas fa-search text-white mx-3"></i
-                ></a>
-                <input
-                  class="form-control white-text rgba-black-light border-0 z-depth-0 pl-5"
-                  type="text"
-                  placeholder="Search"
-                  aria-label="Search"
-                />
-              </div>
-            </div>
+        <nav class="navbarSearch">
+          <form class="form-inline">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+              Search
+            </button>
           </form>
-        </div>
+        </nav>
+
         <!-- Links -->
       </nav>
     </header>
@@ -122,7 +110,7 @@
           <li><a href="./Dashboard/DashboardHistory.html">Historique</a></li>
           <li><a href="./Dashboard/DashboardNotif.html">Notification</a></li>
           <li>
-            <a href="./Dashboard/DashboardSécu.html"
+            <a href="./Dashboard/DashboardSecu.html"
               >Confidentialité / sécurité</a
             >
           </li>
