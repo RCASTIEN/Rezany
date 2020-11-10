@@ -1,74 +1,94 @@
 body{
     box-sizing: border-box;
    
-    width: 100%;
+    width: 80%;
     height: 100%;
+    margin: 0 auto; 
+    position: relative;
    
     }
 
+/*logo*/
 
-
-    /*Nav bar*/
-
-  
-
-/* premier carousel */
-   
-   .carousel-inner img {
-        
-      height: 500px;
-    }
-
-
-
-
-    /*Deuxième carousel*/
-
-
-
-   .carousel-inner2 img
-    {
-        width: 75%;
-        height: 350px;
-        text-align: center;
-        display: block;
+.logo img
+{ 
+    display: block;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
+    height: 100px;
+}
+
+
+/*Nav bar*/
+
+    .breadcrumb
+
+    {
+        background-color: rgb(217, 218, 211);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 70%;
+        border-width:1px;
+ border-style:groove;
+ border-color: gray;
+
+    }
+
+   .breadcrumb a {
+        text-decoration: none;
+        color:  rgb(37, 35, 35);
+        }
+    .breadcrumb a:hover
+    {
+        color: rgb(0, 128, 75);
         
     }
-    .carousel-control-next , .carousel-control-prev
-    {
+
+  .breadcrumb a:visited {
+           
+            }
+
+
+ .navbarSearch
+
+ {
+     width: 80%;
+ }
+
+ input .form-control
+{
+    width: 80%;
+}
+
+.form-inline
+{
+    width: 80%;
+}
+/* premier carousel */
+    @media screen and 
+            (min-width: 480px) and (max-width: 810px) {
+        
+   .carousel-inner img {
        
-        
-       top: 200px;
-       margin-left: 200px;
-   margin-right: 200px;
-      
+      height: 500px;
+      display: flex;
+   flex-wrap: wrap;
+     
     }
 
-    /*Deck images */
-    .card-img-top 
+    #carouselExampleIndicators{
+        margin-bottom: 50px;
+    }
+    }
 
-    {
-        width: 100%;
-    height: 700px;
-   text-align: center;
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
+
    
-
-    }
-
-    .card-deck 
-    {
-
-         display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    }
 
 /*Footer*/
+
+@media screen and 
+(min-width: 480px) and (max-width: 810px) {
 
 footer
 {
@@ -78,11 +98,12 @@ footer
     border-top: grey solid 2px; 
     position: absolute;
     text-align: center;
-    display: block;
+    display: flex;
+   flex-wrap: wrap;
    
 
 }
-
+}
 
 
 
