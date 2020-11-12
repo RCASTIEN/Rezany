@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="../Js/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" href="../Css/bootstrap.min.css" />
+    <script src="../Js/bootstrap.min.js"></script>
+    <script src="../Js/poppers.min.js"></script>
+    <link rel="stylesheet" href="../Css/Header.css" />
+    <title>Article</title>
+  </head>
+  <style>
+    /*@media screen and 
+    (min-width: 450px) and (max-width: 800px){*/
+
+    .box1 {
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      margin: 100px auto;
+      width: 70%;
+      padding: 20px 0;
+      flex-wrap: wrap;
+    }
+
+    /*.box2{
+        display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-right: 100px;
+  padding: 20px;
+
+}*/
+
+    .box3 {
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      margin: 100px auto;
+      width: 70%;
+      padding: 20px;
+      flex-wrap: wrap;
+    }
+    .card {
+      width: 100%;
+      margin: 30px 0;
+    }
+
+    @media screen and (min-width: 600px) {
+      .card {
+        width: 30%;
+      }
+    }
+    
+    .pied{
+        width: auto;
+        height: 125px;
+        background-color:black ;
+        border: darkblue;
+        color: blanchedalmond;
+        
+        
+    }
+    .f1{
+        padding: 40px;
+        float: left;
+       
+    }
+    .f3 {
+      float: right;
+      color: black;
+      padding: 40px;
+     
+      
+    }
+    #p{
+        color:blanchedalmond;
+       
+    }
+
+  </style>
+
+  <body>
+    <header>
+      <!-- -->
+
+      <nav class="navbar navbar-expand-md navbar-light">
+        <a class="navbar-brand" href="#!">
+          <img src="../Img/icon.png" height="80" alt="mdb logo" />
+        </a>
+
+        <!-- Collapse button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#basicExampleNav1"
+          aria-controls="basicExampleNav1"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Breadcrumbs -->
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#!">Homme</a></li>
+          <li class="breadcrumb-item"><a href="#!">Femmes</a></li>
+          <li class="breadcrumb-item active"><a href="#!">Enfants</a></li>
+          <li class="breadcrumb-item active"><a href="#!">Maison</a></li>
+        </ol>
+        <!-- Breadcrumbs -->
+
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="basicExampleNav1">
+          <!-- Right -->
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="#!" class="nav-link navbar-link-2 waves-effect">
+                <span class="badge badge-pill red"
+                  ><img src="../Img/panier.png" />1</span
+                >
+                <i class="fas fa-shopping-cart pl-0"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="Login.html" class="nav-link waves-effect"> Sign in </a>
+            </li>
+            <li class="nav-item pl-2 mb-2 mb-md-0">
+              <a
+                href="Registration.html"
+                type="button"
+                class="btn btn-outline-info btn-md btn-rounded btn-navbar waves-effect waves-light"
+                >Sign up</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- Links -->
+      </nav>
+
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-md navbar-light">
+        <!-- Collapse button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#basicExampleNav9"
+          aria-controls="basicExampleNav9"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <nav class="navbarSearch">
+          <form class="form-inline">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+              Search
+            </button>
+          </form>
+        </nav>
+
+        <!-- Links -->
+      </nav>
+    </header>
+    <div class="box1">
+      <div class="card">
+        <img
+          src="https://chapeau.bon-clic-bon-genre.fr/photo/folar4_191101161334.jpg"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Chapeau</h5>
+          <p class="card-text">50$</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://media.idkids.fr/media/productstorage/images/okaidi/0087924/thumbs/0155945_800.jpg"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Pantallon</h5>
+          <p class="card-text">25$</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://www.cdiscount.com/pdt2/8/7/7/1/700x700/mp16077877/rw/manteau-camel-mi-long-a-col-revers.jpg"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Menteau</h5>
+          <p class="card-text">70$</p>
+        </div>
+      </div>
+    </div>
+    <div class="box3">
+      <div class="card">
+        <img
+          src="https://www.luzaka.com/media/catalog/product/cache/1/image/1000x1000/9df78eab33525d08d6e5fb8d27136e95/4/0/40567_3.jpg"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Montre</h5>
+          <p class="card-text">170$</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://www.histoiredestyle.com/wp-content/uploads/2019/09/20190915_185535-979x1024.jpg"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Bottes</h5>
+          <p class="card-text">100$</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://img.t-a-o.com/medias/sys_master/images/h7f/hbc/11047332544542/95513_02285_A_Tao-WorkingFormat_1200x1200.jpg"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Jupe</h5>
+          <p class="card-text">50$</p>
+        </div>
+      </div>
+    </div>
+    <div class="box3">
+      <div class="card">
+        <img
+          src="https://laparisiennebijoux.com/wp-content/uploads/2018/02/collier-femme-ras-du-cou-tendance.jpg"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <h5 class="card-title">collier</h5>
+          <p class="card-text">17$</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://www.cdiscount.com/pdt2/8/9/2/1/700x700/hao2009823137892/rw/echarpe-chale-femme-cachemire-chaud-automne-hiver.jpg"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Écharpe</h5>
+          <p class="card-text">10$</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://www.cdiscount.com/pdt2/1/1/1/1/700x700/mp18251111/rw/chaussures-a-talons-hauts-pour-femmes-sexy-en-form.jpg"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Talon</h5>
+          <p class="card-text">50$</p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <footer>
+    <div class="pied">
+      <p class="f1">
+        Copyright &copy 2020-2021 - tous les droits reserves
+<div class="f3">
+        <a id="p"href="">FAQ| </a>
+        <a id="p"href=""> Contact| </a>
+        <a id="p"href=""> Mentions Légales </a>
+    </div>
+      </p>
+    </div>
+  </footer>
+</html>
