@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="../Css/bootstrap.min.css" />
     <script src="../Js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../Css/Header.css" />
-    <link rel="stylesheet" href="../Css/Registration.css" />
+    <link rel="stylesheet" href="../Css/Dashbord.css" />
+    <script src="../Js/dashboard.js"></script>
     <title>Document</title>
   </head>
   <body>
@@ -101,68 +102,29 @@
         <!-- Links -->
       </nav>
     </header>
-    <div>
-      <section>
-        <div class="d-flex" id="wrapper">
-          <!-- Sidebar -->
-          <div class="bg-light border-right" id="sidebar-wrapper">
-            <div class="sidebar-heading">Dashboard</div>
-            <div class="list-group list-group-flush">
-              <a
-                href="#"
-                class="list-group-item list-group-item-action bg-light"
-                >Compte</a
-              >
-              <a
-                href="#"
-                class="list-group-item list-group-item-action bg-light"
-                >Ajout de compte</a
-              >
-              <a
-                href="#"
-                class="list-group-item list-group-item-action bg-light"
-                >Historique</a
-              >
-              <a
-                href="#"
-                class="list-group-item list-group-item-action bg-light"
-                >Préférences</a
-              >
-              <a
-                href="#"
-                class="list-group-item list-group-item-action bg-light"
-                >Notification</a
-              >
-              <a
-                href="#"
-                class="list-group-item list-group-item-action bg-light"
-                >Confidentialité / sécurité</a
-              >
-            </div>
-          </div>
-          <!-- /#sidebar-wrapper -->
-
-          <!-- Page Content -->
-          <div id="page-content-wrapper">
-            <div class="container-fluid">
-              <h1 class="mt-4">Dashboard USER</h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-                voluptas odio, quia sunt aut est nemo voluptate consequatur
-                provident ducimus fugiat maiores cumque iste itaque molestias
-                similique quam, ipsa aliquam?
-              </p>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Laboriosam deleniti nam similique ad quam, facere fugit alias
-                rerum suscipit, nobis error totam officia temporibus doloremque
-                earum accusantium fuga! Dolorum, reprehenderit!
-              </p>
-            </div>
-          </div>
-          <!-- /#page-content-wrapper -->
+    <div class="nav-btn">Menu Admin</div>
+    <div class="sidebar">
+      <div class="nav-dashbord">
+        <ul>
+          <li class="active"><a href="DashboardUser.html">Dashboard</a></li>
+          <li><a href="./Dashboard/DashboardHistory.html">Historique</a></li>
+          <li><a href="./Dashboard/DashboardNotif.html">Notification</a></li>
+          <li>
+            <a href="./Dashboard/DashboardSecu.html"
+              >Confidentialité / sécurité</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <div class="main-dashbord">
+        <h1 class="mt-4">Dashboard User</h1>
+        <div class="panel-wrapper">
+          <div class="panel-head">Name</div>
+          <p class="panel-body">Lorem ipsum dolor</p>
         </div>
-      </section>
+      </div>
     </div>
   </body>
 </html>

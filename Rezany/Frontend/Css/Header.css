@@ -1,109 +1,76 @@
-body{
-    box-sizing: border-box;
-   
-    width: 80%;
-    height: 100%;
-    margin: 0 auto; 
-    position: relative;
-   
-    }
+body {
+  box-sizing: border-box;
+
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
 
 /*logo*/
 
-.logo img
-{ 
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 100px;
+.logo img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100px;
 }
-
 
 /*Nav bar*/
 
-    .breadcrumb
-
-    {
-        background-color: rgb(217, 218, 211);
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        width: 70%;
-        border-width:1px;
- border-style:groove;
- border-color: gray;
-
-    }
-
-   .breadcrumb a {
-        text-decoration: none;
-        color:  rgb(37, 35, 35);
-        }
-    .breadcrumb a:hover
-    {
-        color: rgb(0, 128, 75);
-        
-    }
-
-  .breadcrumb a:visited {
-           
-            }
-
-
- .navbarSearch
-
- {
-     width: 80%;
- }
-
- input .form-control
-{
-    width: 80%;
+.breadcrumb {
+  background-color: rgb(217, 218, 211);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 70%;
+  border-width: 1px;
+  border-style: groove;
+  border-color: gray;
 }
 
-.form-inline
-{
-    width: 80%;
+.breadcrumb a {
+  text-decoration: none;
+  color: rgb(37, 35, 35);
+}
+.breadcrumb a:hover {
+  color: rgb(0, 128, 75);
+}
+
+.navbarSearch {
+  width: 80%;
+}
+
+input .form-control {
+  width: 80%;
+}
+
+.form-inline {
+  width: 80%;
 }
 /* premier carousel */
-    @media screen and 
-            (min-width: 480px) and (max-width: 810px) {
-        
-   .carousel-inner img {
-       
-      height: 500px;
-      display: flex;
-   flex-wrap: wrap;
-     
-    }
+@media screen and (min-width: 480px) and (max-width: 810px) {
+  .carousel-inner img {
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-    #carouselExampleIndicators{
-        margin-bottom: 50px;
-    }
-    }
-
-
-   
+  #carouselExampleIndicators {
+    margin-bottom: 50px;
+  }
+}
 
 /*Footer*/
 
-@media screen and 
-(min-width: 480px) and (max-width: 810px) {
-
-footer
-{
-
+@media screen and (min-width: 480px) and (max-width: 810px) {
+  footer {
     width: 100%;
-   
-    border-top: grey solid 2px; 
+
+    border-top: grey solid 2px;
     position: absolute;
     text-align: center;
     display: flex;
-   flex-wrap: wrap;
-   
-
+    flex-wrap: wrap;
+  }
 }
-}
-
-
-

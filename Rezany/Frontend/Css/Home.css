@@ -1,36 +1,23 @@
-
-
-   /*Deck images */
-   .card-img-top 
-
-   {
-       width: 100%;
-   height: auto;
+/*Deck images */
+.card-img-top {
+  width: 100%;
+  height: auto;
   text-align: center;
 
   margin-left: auto;
   margin-right: auto;
   display: flex;
   flex-wrap: wrap;
-  
+}
 
-   }
+.card-deck {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
 
-   .card-deck 
-   {
-
-        display: flex;
-   flex-wrap: wrap;
-   justify-content: space-around;
-   margin-bottom: 20px; 
-   margin-top: 20px;
-   
-   }
-
-   #carouselExampleFade
-
-   { 
-    margin-top: 150px;
-    
-   }
-
+#carouselExampleFade {
+  margin-top: 150px;
+}
