@@ -1,8 +1,9 @@
 body {
   box-sizing: border-box;
-  margin: 0 auto;
-  width: 100%;
+  width: 80%;
   height: 100%;
+  margin: 0 auto;
+  position: relative;
 }
 .container {
   width: 100%;
@@ -76,9 +77,9 @@ body {
 
 .main-dashbord {
   background-color: #fafafa;
-  width: calc(100% - 200px);
+  width: calc(95% - 200px);
   height: 100%;
-  margin-left: 200px;
+  margin: 0 auto;
 }
 .main-dashbord .panel-wrapper {
   margin: 20px 0;
@@ -94,6 +95,17 @@ body {
 .main-dashbord .panel-wrapper .panel-body {
   padding: 20px 10px;
   font-size: 80%;
+}
+
+/*Specifique à une page*/
+
+/*dashbord securité*/
+
+.modification {
+  width: 110px;
+  padding: 5px 10px;
+  box-shadow: 0px 1px 5px #777;
+  margin: 25px 0 75px 0;
 }
 
 @media only screen and (max-width: 420px) {
