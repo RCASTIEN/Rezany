@@ -99,6 +99,29 @@ body {
 
 /*Specifique à une page*/
 
+/*dashbord user*/
+
+.m-b-25 {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.m-b-25 .file {
+  position: relative;
+  overflow: hidden;
+  border: none;
+  border-radius: 0;
+  font-size: 15px;
+}
+
+.m-b-25 .file input {
+  position: absolute;
+  opacity: 0;
+  right: 0;
+  top: 0;
+}
+
 /*dashbord securité*/
 
 .modification {
