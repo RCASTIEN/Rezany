@@ -1,6 +1,5 @@
 body {
   box-sizing: border-box;
-
   width: 80%;
   height: 100%;
   margin: 0 auto;
@@ -27,15 +26,11 @@ body {
   border-width: 1px;
   border-style: none;
   font-family: Georgia, serif;
- 
 }
 
-.breadcrumb-item + .breadcrumb-item::before 
-
-{
-    content: none;
+.breadcrumb-item + .breadcrumb-item::before {
+  content: none;
 }
-
 
 .breadcrumb a {
   text-decoration: none;
@@ -55,14 +50,11 @@ input .form-control {
 
 .form-inline {
   width: 100%;
-  
 }
 
 .form-inline .form-control {
-align-items: flex-end;
+  align-items: flex-end;
   width: 80%;
-  
-
 }
 /* premier carousel */
 @media screen and (min-width: 480px) and (max-width: 810px) {
@@ -76,20 +68,3 @@ align-items: flex-end;
     margin-bottom: 50px;
   }
 }
-
-/*Footer*/
-
-@media screen and (min-width: 480px) and (max-width: 810px) {
-  footer {
-    width: 100%;
-
-    border-top: grey solid 2px;
-    position: absolute;
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
-
-
-
