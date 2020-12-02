@@ -23,30 +23,11 @@
   background-color: black;
   color: white;
 }
-#b2 {
-  border-radius: 5px;
-  background-color: black;
-  color: white;
-}
-#b3 {
-  border-radius: 5px;
-  background-color: black;
-  color: white;
-}
-#b4 {
-  border-radius: 5px;
-  background-color: black;
-  color: white;
-}
-#b5 {
-  border-radius: 5px;
-  background-color: black;
-  color: white;
-}
 #a1 {
   border-radius: 5px;
   background-color: black;
+  text-align: center;
   color: white;
-  height: 50px;
-  width: 200px;
+  height: 30px;
+  width: 180px;
 }

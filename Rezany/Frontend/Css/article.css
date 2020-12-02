@@ -13,25 +13,6 @@
   padding: 20px 0;
   flex-wrap: wrap;
 }
-
-/*.box2{
-    display: flex;
-justify-content: space-between;
-text-align: center;
-margin-right: 100px;
-padding: 20px;
-
-}*/
-
-.box3 {
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-  margin: 100px auto;
-  width: 70%;
-  padding: 20px;
-  flex-wrap: wrap;
-}
 .card {
   width: 100%;
   margin: 30px 0;
