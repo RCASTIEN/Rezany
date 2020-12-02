@@ -1,6 +1,5 @@
 body {
   box-sizing: border-box;
-
   width: 80%;
   height: 100%;
   margin: 0 auto;
@@ -19,14 +18,18 @@ body {
 /*Nav bar*/
 
 .breadcrumb {
-  background-color: rgb(217, 218, 211);
+  background-color: transparent;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   width: 70%;
   border-width: 1px;
-  border-style: groove;
-  border-color: gray;
+  border-style: none;
+  font-family: Georgia, serif;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: none;
 }
 
 .breadcrumb a {
@@ -46,6 +49,11 @@ input .form-control {
 }
 
 .form-inline {
+  width: 100%;
+}
+
+.form-inline .form-control {
+  align-items: flex-end;
   width: 80%;
 }
 /* premier carousel */
@@ -58,19 +66,5 @@ input .form-control {
 
   #carouselExampleIndicators {
     margin-bottom: 50px;
-  }
-}
-
-/*Footer*/
-
-@media screen and (min-width: 480px) and (max-width: 810px) {
-  footer {
-    width: 100%;
-
-    border-top: grey solid 2px;
-    position: absolute;
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
   }
 }

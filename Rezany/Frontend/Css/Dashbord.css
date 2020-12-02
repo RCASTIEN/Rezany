@@ -164,3 +164,9 @@ body {
     position: relative;
   }
 }
+
+.breadcrumb-item + .breadcrumb-item::before 
+
+{
+    content: none;
+}
