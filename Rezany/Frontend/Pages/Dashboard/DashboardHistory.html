@@ -7,17 +7,18 @@
     <link rel="stylesheet" href="../../Css/bootstrap.min.css" />
     <script src="../../Js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../../Css/Header.css" />
-    <link rel="stylesheet" href="../../Css/Registration.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="../../Css/Dashbord.css" />
+    <link rel="stylesheet" href="../../Css/Footer.css" />
+    <script src="../../Js/dashboard.js"></script>
+    <title>Historique</title>
   </head>
   <body>
     <header>
       <!-- -->
+      <div class="logo">
+        <img src="../../Img/Rezanylog.png"></div>
 
       <nav class="navbar navbar-expand-md navbar-light">
-        <a class="navbar-brand" href="#!">
-          <img src="../Img/icon.png" height="80" alt="mdb logo" />
-        </a>
 
         <!-- Collapse button -->
         <button
@@ -48,17 +49,19 @@
             <li class="nav-item">
               <a href="#!" class="nav-link navbar-link-2 waves-effect">
                 <span class="badge badge-pill red"
-                  ><img src="../Img/panier.png" />1</span
+                  ><img src="../../Img/panier.png" />1</span
                 >
                 <i class="fas fa-shopping-cart pl-0"></i>
               </a>
             </li>
             <li class="nav-item">
-              <a href="Login.html" class="nav-link waves-effect"> Sign in </a>
+              <a href="../Login.html" class="nav-link waves-effect">
+                Sign in
+              </a>
             </li>
             <li class="nav-item pl-2 mb-2 mb-md-0">
               <a
-                href="Registration.html"
+                href="../Registration.html"
                 type="button"
                 class="btn btn-outline-info btn-md btn-rounded btn-navbar waves-effect waves-light"
                 >Sign up</a
@@ -101,68 +104,37 @@
         <!-- Links -->
       </nav>
     </header>
-    <div>
-      <section>
-        <div class="d-flex" id="wrapper">
-          <!-- Sidebar -->
-          <div class="bg-light border-right" id="sidebar-wrapper">
-            <div class="sidebar-heading">Dashboard</div>
-            <div class="list-group list-group-flush">
-              <a
-                href="#"
-                class="list-group-item list-group-item-action bg-light"
-                >Compte</a
-              >
-              <a
-                href="#"
-                class="list-group-item list-group-item-action bg-light"
-                >Ajout de compte</a
-              >
-              <a
-                href="#"
-                class="list-group-item list-group-item-action bg-light"
-                >Historique</a
-              >
-              <a
-                href="#"
-                class="list-group-item list-group-item-action bg-light"
-                >Préférences</a
-              >
-              <a
-                href="#"
-                class="list-group-item list-group-item-action bg-light"
-                >Notification</a
-              >
-              <a
-                href="#"
-                class="list-group-item list-group-item-action bg-light"
-                >Confidentialité / sécurité</a
-              >
-            </div>
-          </div>
-          <!-- /#sidebar-wrapper -->
-
-          <!-- Page Content -->
-          <div id="page-content-wrapper">
-            <div class="container-fluid">
-              <h1 class="mt-4">Dashboard HISTORY</h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-                voluptas odio, quia sunt aut est nemo voluptate consequatur
-                provident ducimus fugiat maiores cumque iste itaque molestias
-                similique quam, ipsa aliquam?
-              </p>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Laboriosam deleniti nam similique ad quam, facere fugit alias
-                rerum suscipit, nobis error totam officia temporibus doloremque
-                earum accusantium fuga! Dolorum, reprehenderit!
-              </p>
-            </div>
-          </div>
-          <!-- /#page-content-wrapper -->
-        </div>
-      </section>
+    <div class="nav-btn">Menu</div>
+    <div class="sidebar">
+      <div class="nav-dashbord">
+        <ul>
+          <li class="active"><a href="../DashboardUser.html">Dashboard</a></li>
+          <li><a href="DashboardHistory.html">Historique</a></li>
+          <li><a href="DashboardNotif.html">Notification</a></li>
+          <li><a href="DashboardSecu.html">Confidentialité / sécurité</a></li>
+        </ul>
+      </div>
     </div>
+    <div class="container">
+      <div class="main-dashbord">
+        <h1 class="mt-4">Dashboard Historique</h1>
+        <div class="panel-wrapper">
+          <div class="panel-head">Name</div>
+          <p class="panel-body">historique de l'achat...</p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="pied">
+        <p class="f1">
+          Copyright &copy 2020-2021 - tous les droits reserves
+  <div class="f3">
+          <a id="p"href="">FAQ| </a>
+          <a id="p"href=""> Contact| </a>
+          <a id="p"href=""> Mentions Légales </a>
+      </div>
+        </p>
+      </div>
+    </footer>
   </body>
 </html>

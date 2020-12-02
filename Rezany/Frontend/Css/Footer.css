@@ -1,0 +1,33 @@
+/*Footer*/
+
+.pied {
+  width: auto;
+  height: 125px;
+  background-color: black;
+  border: darkblue;
+  color: blanchedalmond;
+}
+.f1 {
+  padding: 40px;
+  float: left;
+}
+.f3 {
+  float: right;
+  color: black;
+  padding: 40px;
+}
+#p {
+  color: blanchedalmond;
+}
+
+@media screen and (min-width: 480px) and (max-width: 810px) {
+  footer {
+    width: 100%;
+
+    border-top: grey solid 2px;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

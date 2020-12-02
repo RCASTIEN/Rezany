@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="../../Js/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" href="../../Css/bootstrap.min.css" />
+    <script src="../../Js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../../Css/Header.css" />
+    <link rel="stylesheet" href="../../Css/Dashbord.css" />
+    <link rel="stylesheet" href="../../Css/Footer.css" />
+    <script src="../../Js/dashboard.js"></script>
+    <title>Mon compte</title>
+  </head>
+  <body>
+    <header>
+      <!-- -->
+      <div class="logo">
+        <img src="../../Img/Rezanylog.png"></div>
+
+      <nav class="navbar navbar-expand-md navbar-light">
+
+        <!-- Collapse button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#basicExampleNav1"
+          aria-controls="basicExampleNav1"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Breadcrumbs -->
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#!">Homme</a></li>
+          <li class="breadcrumb-item"><a href="#!">Femmes</a></li>
+          <li class="breadcrumb-item active"><a href="#!">Enfants</a></li>
+          <li class="breadcrumb-item active"><a href="#!">Maison</a></li>
+        </ol>
+        <!-- Breadcrumbs -->
+
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="basicExampleNav1">
+          <!-- Right -->
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="#!" class="nav-link navbar-link-2 waves-effect">
+                <span class="badge badge-pill red"
+                  ><img src="../../Img/panier.png" />1</span
+                >
+                <i class="fas fa-shopping-cart pl-0"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="Login.html" class="nav-link waves-effect"> Sign in </a>
+            </li>
+            <li class="nav-item pl-2 mb-2 mb-md-0">
+              <a
+                href="Registration.html"
+                type="button"
+                class="btn btn-outline-info btn-md btn-rounded btn-navbar waves-effect waves-light"
+                >Sign up</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- Links -->
+      </nav>
+
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-md navbar-light">
+        <!-- Collapse button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#basicExampleNav9"
+          aria-controls="basicExampleNav9"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <nav class="navbarSearch">
+          <form class="form-inline">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+              Search
+            </button>
+          </form>
+        </nav>
+
+        <!-- Links -->
+      </nav>
+    </header>
+    <div class="nav-btn">Menu</div>
+    <div class="sidebar">
+      <div class="nav-dashbord">
+        <ul>
+          <li class="active"><a href="../DashboardUser.html">Dashboard</a></li>
+          <li><a href="DashboardHistory.html">Historique</a></li>
+          <li><a href="DashboardNotif.html">Notification</a></li>
+          <li><a href="DashboardSecu.html">Confidentialité / sécurité</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <div class="main-dashbord">
+        <h1 class="mt-4">Dashboard Compte / sécurité</h1>
+        <div class="panel-wrapper">
+          <div class="panel-head">Nom</div>
+          <div class="input-group mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Nom actuelle"
+              aria-label="Nom actuelle"
+              aria-describedby="basic-addon2"
+            />
+            <div class="input-group-prepend">
+              <button class="btn btn-outline-secondary" type="button">
+                Validation
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="panel-wrapper">
+          <div class="panel-head">Email</div>
+          <div class="input-group mb-3">
+            <input
+              type="email"
+              class="form-control"
+              placeholder="Email actuelle"
+              aria-label="Email actuelle"
+              aria-describedby="basic-addon2"
+            />
+            <div class="input-group-prepend">
+              <button class="btn btn-outline-secondary" type="button">
+                Validation
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="panel-wrapper">
+          <div class="panel-head">Mot de passe</div>
+          <div class="input-group mb-3">
+            <input
+              type="password"
+              class="form-control"
+              placeholder="Mot de passe actuelle"
+              aria-label="Mot de passe actuelle"
+              aria-describedby="basic-addon2"
+            />
+            <div class="input-group-prepend">
+              <button class="btn btn-outline-secondary" type="button">
+                Validation
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="panel-wrapper">
+          <div class="panel-head">Changer d mot de passe</div>
+          <div class="input-group mb-3">
+            <input
+              type="password"
+              class="form-control"
+              placeholder="Nouveau mot de passe"
+              aria-label="Nouveau mot de passe"
+              aria-describedby="basic-addon2"
+            />
+            <div class="input-group-prepend">
+              <button class="btn btn-outline-secondary" type="button">
+                Validation
+              </button>
+            </div>
+          </div>
+        </div>
+        <h3 class="mt-4">Détail du compte</h3>
+
+        <div class="panel-wrapper">
+          <div class="panel-head">Nom</div>
+          <div class="input-group mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Nom"
+              aria-label="Nom"
+              aria-describedby="basic-addon2"
+            />
+            <div class="input-group-prepend">
+              <button class="btn btn-outline-secondary" type="button">
+                Validation
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="panel-wrapper">
+          <div class="panel-head">Prénom</div>
+          <div class="input-group mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="prenom"
+              aria-label="prenom"
+              aria-describedby="basic-addon2"
+            />
+            <div class="input-group-prepend">
+              <button class="btn btn-outline-secondary" type="button">
+                Validation
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="panel-wrapper">
+          <div class="panel-head">Adresse</div>
+          <div class="input-group mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Adresse"
+              aria-label="Adresse"
+              aria-describedby="basic-addon2"
+            />
+            <div class="input-group-prepend">
+              <button class="btn btn-outline-secondary" type="button">
+                Validation
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="panel-wrapper">
+          <div class="panel-head">Code postal</div>
+          <div class="input-group mb-3">
+            <input
+              type="number"
+              class="form-control"
+              placeholder="cp"
+              aria-label="cp"
+              aria-describedby="basic-addon2"
+            />
+            <div class="input-group-prepend">
+              <button class="btn btn-outline-secondary" type="button">
+                Validation
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="panel-wrapper">
+          <div class="panel-head">Département</div>
+          <div class="input-group mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="département"
+              aria-label="département"
+              aria-describedby="basic-addon2"
+            />
+            <div class="input-group-prepend">
+              <button class="btn btn-outline-secondary" type="button">
+                Validation
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="panel-wrapper">
+          <div class="panel-head">Ville</div>
+          <div class="input-group mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="ville"
+              aria-label="ville"
+              aria-describedby="basic-addon2"
+            />
+            <div class="input-group-prepend">
+              <button class="btn btn-outline-secondary" type="button">
+                Validation
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="from-row from-group modification">
+          <a href="../Home.html">Modification</a>
+        </div>
+
+        <h3 class="mt-4">Supprimer le compte</h3>
+        <div class="from-row from-group modification">
+          <a href="../Home.html">Supprimer</a>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="pied">
+        <p class="f1">
+          Copyright &copy 2020-2021 - tous les droits reserves
+  <div class="f3">
+          <a id="p"href="">FAQ| </a>
+          <a id="p"href=""> Contact| </a>
+          <a id="p"href=""> Mentions Légales </a>
+      </div>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

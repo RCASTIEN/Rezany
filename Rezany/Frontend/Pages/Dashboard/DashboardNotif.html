@@ -3,24 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="../Js/jquery-3.5.1.js"></script>
-    <link rel="stylesheet" href="../Css/bootstrap.min.css" />
-    <script src="../Js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="../Css/Header.css" />
-    <link rel="stylesheet" href="../Css/Panier.css" />
-    <link rel="stylesheet" href="../Css/Footer.css"/>
-    <title>Document</title>
+    <script src="../../Js/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" href="../../Css/bootstrap.min.css" />
+    <script src="../../Js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../../Css/Header.css" />
+    <link rel="stylesheet" href="../../Css/Dashbord.css" />
+    <link rel="stylesheet" href="../../Css/Footer.css" />
+    <script src="../../Js/dashboard.js"></script>
+    <title>Notification</title>
   </head>
   <body>
     <header>
       <!-- -->
       <div class="logo">
-        <img src="../Img/Rezanylog.png"></div>
-      
+        <img src="../../Img/Rezanylog.png"></div>
+
       <nav class="navbar navbar-expand-md navbar-light">
-        <a class="navbar-brand" href="#!">
-         
-        </a>
 
         <!-- Collapse button -->
         <button
@@ -51,7 +49,7 @@
             <li class="nav-item">
               <a href="#!" class="nav-link navbar-link-2 waves-effect">
                 <span class="badge badge-pill red"
-                  ><img src="../Img/panier.png" />1</span
+                  ><img src="../../Img/panier.png" />1</span
                 >
                 <i class="fas fa-shopping-cart pl-0"></i>
               </a>
@@ -104,63 +102,38 @@
         <!-- Links -->
       </nav>
     </header>
-
-    <section>
-      <article>
-        <table class="table">
-          <thead>
-            <tr>
-              <td scope="col" class="panier-td">Article</td>
-              <td scope="col" class="panier-td">Prix</td>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Vetement 1</td>
-              <td class="border-lign">12,50€</td>
-            </tr>
-            <tr>
-              <td>Vetement 2</td>
-              <td class="border-lign">32,50€</td>
-            </tr>
-            <tr>
-              <td>Vetement 3 - avec plusieurs mot pour choppé masse monde</td>
-              <td class="border-lign">89,99€</td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <tr>
-              <td scope="col" class="panier-td">Transporteur</td>
-              <td class="border-lign">89,99€</td>
-            </tr>
-            <tr>
-              <td scope="col" class="panier-td">Total</td>
-              <td class="border-lign">89,99€</td>
-            </tr>
-            <tr>
-              <th scope="col"></th>
-              <td class="panier">
-                <a href="Home.html" class="panier-sold">Payer</a
-                ><a href="Home.html" class="panier-sold">Annuler</a>
-              </td>
-            </tr>
-          </tfoot>
-        </table>
-      </article>
-    </section>
+    <div class="nav-btn">Menu</div>
+    <div class="sidebar">
+      <div class="nav-dashbord">
+        <ul>
+          <li class="active"><a href="../DashboardUser.html">Dashboard</a></li>
+          <li><a href="DashboardHistory.html">Historique</a></li>
+          <li><a href="DashboardNotif.html">Notification</a></li>
+          <li><a href="DashboardSecu.html">Confidentialité / sécurité</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <div class="main-dashbord">
+        <h1 class="mt-4">Dashboard Notification</h1>
+        <div class="panel-wrapper">
+          <div class="panel-head">Name</div>
+          <p class="panel-body">Lorem ipsum dolor</p>
+        </div>
+        <h3 class="mt-4">Ajout d'article</h3>
+      </div>
+    </div>
+    <footer>
+      <div class="pied">
+        <p class="f1">
+          Copyright &copy 2020-2021 - tous les droits reserves
+  <div class="f3">
+          <a id="p"href="">FAQ| </a>
+          <a id="p"href=""> Contact| </a>
+          <a id="p"href=""> Mentions Légales </a>
+      </div>
+        </p>
+      </div>
+    </footer>
   </body>
-
-  <footer>
-    <div class="pied">
-      <p class="f1">
-        Copyright &copy 2020-2021 - tous les droits reserves
-<div class="f3">
-        <a id="p"href="">FAQ| </a>
-        <a id="p"href=""> Contact| </a>
-        <a id="p"href=""> Mentions Légales </a>
-    </div>
-      </p>
-    </div>
-  </footer>
-
 </html>

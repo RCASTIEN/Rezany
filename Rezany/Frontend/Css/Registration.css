@@ -25,3 +25,9 @@
   background-color: cadetblue;
   text-decoration: none;
 }
+
+.breadcrumb-item + .breadcrumb-item::before 
+
+{
+    content: none;
+}
