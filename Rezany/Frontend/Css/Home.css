@@ -21,3 +21,10 @@
 #carouselExampleFade {
   margin-top: 150px;
 }
+
+
+.breadcrumb-item + .breadcrumb-item::before 
+
+{
+    content: none;
+}

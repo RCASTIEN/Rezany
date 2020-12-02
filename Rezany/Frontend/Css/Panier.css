@@ -39,3 +39,9 @@ body {
 .panier-td {
   font-weight: bold;
 }
+
+.breadcrumb-item + .breadcrumb-item::before 
+
+{
+    content: none;
+}
