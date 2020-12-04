@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello DashboardUserController!{% endblock %}
+
+{% block stylesheets %}
+
+    <link rel="stylesheet" href="../front/Css/Dashbord.css" />
+
+{% endblock %}
+
+{% block body %}
+    <section class="container-fluid">
+    <div class="nav-btn">Menu</div>
+    <div class="sidebar">
+        <div class="nav-dashbord">
+            <ul>
+                <li class="active"><a href="DashboardUser.html">Dashboard</a></li>
+                <li><a href="DashboardHistory.html">Historique</a></li>
+                <li><a href="DashboardNotif.html">Notification</a></li>
+                <li><a href="DashboardSecu.html">Confidentialité / sécurité</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="main-dashbord">
+            <h1 class="mt-4">Dashboard Notification</h1>
+            <div class="panel-wrapper">
+                <div class="panel-head">Name</div>
+                <p class="panel-body">Lorem ipsum dolor</p>
+            </div>
+            <h3 class="mt-4">Ajout d'article</h3>
+        </div>
+    </div>
+    </section>
+
+{% endblock %}

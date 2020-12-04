@@ -1,0 +1,98 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Welcome!{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../front/Css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../front/Css/Header.css"    />
+    <link rel="stylesheet" href="../front/Css/Footer.css"/>
+    {% block stylesheets %}
+    {% endblock %}
+</head>
+    <body>
+
+        <header>
+            <div class="logo">
+                <a href="Home.html"><img src="../front/Img/Rezanylog.png"></a>
+            </div>
+            <nav class="navbar navbar-expand-md navbar-light">
+                <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#basicExampleNav1"
+                        aria-controls="basicExampleNav1"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="basicExampleNav1">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="Article.html">Hommes</a></li>
+                        <li class="breadcrumb-item"><a href="Article.html">Femmes</a></li>
+                        <li class="breadcrumb-item active"><a href="Article.html">Enfants</a></li>
+                        <li class="breadcrumb-item active"><a href="Article.html">Maison</a></li>
+                    </ol>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#!" class="nav-link navbar-link-2 waves-effect">
+                  <span class="badge badge-pill red"
+                  ><img src="../front/Img/panier.png" />1</span>
+                                <i class="fas fa-shopping-cart pl-0"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Login.html" class="nav-link waves-effect"> Sign in </a>
+                        </li>
+                        <li class="nav-item pl-2 mb-2 mb-md-0">
+                            <a
+                                    href="Registration.html"
+                                    type="button"
+                                    class="btn btn-outline-info btn-md btn-rounded btn-navbar waves-effect waves-light"
+                            >Sign up</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div >
+                <div class="navbar navbar-expand-md navbar-light">
+                    <!-- Collapse button -->
+                    <div class="navbarSearch">
+                        <form class="form-inline">
+                            <input
+                                    class="form-control mr-sm-2"
+                                    type="search"
+                                    placeholder="Search"
+                                    aria-label="Search"
+                            />
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                                Search
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </header>
+        {% block body %}
+        {% endblock %}
+        <footer>
+            <div class="pied">
+                <p class="f1">
+                    Copyright &copy 2020-2021 - tous les droits reserves
+                <div class="f3">
+                    <a id="p" href="">FAQ| </a>
+                    <a id="p" href=""> Contact| </a>
+                    <a id="p" href=""> Mentions Légales </a>
+                </div>
+                </p>
+            </div>
+        </footer>
+        {% block javascripts %}
+            <script src="../front/Js/jquery-3.5.1.js"></script>
+            <script src="../front/Js/bootstrap.min.js"></script>
+            <script src="../front/Js/popper.min.js"></script>
+            <script src="../front/Js/dashboard.js"></script>
+        {% endblock %}
+    </body>
+</html>

@@ -1,0 +1,57 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello PanierController!{% endblock %}
+
+{% block stylesheets %}
+
+    <link rel="stylesheet" href="../front/Css/Panier.css" />
+
+{% endblock %}
+
+{% block body %}
+
+    <section class="container-fluid">
+        <article class="center">
+            <table class="table">
+                <thead>
+                <tr>
+                    <td scope="col" class="panier-td">Article</td>
+                    <td scope="col" class="panier-td">Prix</td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Vetement 1</td>
+                    <td class="border-lign">12,50€</td>
+                </tr>
+                <tr>
+                    <td>Vetement 2</td>
+                    <td class="border-lign">32,50€</td>
+                </tr>
+                <tr>
+                    <td>Vetement 3 - avec plusieurs mot pour choppé masse monde</td>
+                    <td class="border-lign">89,99€</td>
+                </tr>
+                </tbody>
+                <tfoot>
+                <tr>
+                    <td scope="col" class="panier-td">Transporteur</td>
+                    <td class="border-lign">89,99€</td>
+                </tr>
+                <tr>
+                    <td scope="col" class="panier-td">Total</td>
+                    <td class="border-lign">89,99€</td>
+                </tr>
+                <tr>
+                    <th scope="col"></th>
+                    <td class="panier">
+                        <a href="Home.html" class="panier-sold">Payer</a
+                        ><a href="Home.html" class="panier-sold">Annuler</a>
+                    </td>
+                </tr>
+                </tfoot>
+            </table>
+        </article>
+    </section>
+
+{% endblock %}
