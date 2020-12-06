@@ -1,0 +1,75 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello RegistreController!{% endblock %}
+
+{% block stylesheets %}
+
+    <link rel="stylesheet" href="{{ asset('../front/Css/Registration.css') }}" />
+
+{% endblock %}
+
+{% block body %}
+    <div>
+        <section>
+            <article class="login-logout">
+                <form method="GET" class="col-lg-6">
+                    <fieldset>
+                        <legend>Formulaire d'inscription</legend>
+                        <div class="form-row form-group">
+                            <label for="nom" class="col-lg-4"> Nom</label>
+                            <input
+                                    type="text"
+                                    name="nom"
+                                    id="name"
+                                    class="form-control col-lg-8"
+                                    placeholder="Dupont"
+                            />
+                        </div>
+                        <div class="form-row form-group">
+                            <label for="cp" class="col-lg-4"> Email</label>
+                            <input
+                                    type="text"
+                                    name="cp"
+                                    id="cp"
+                                    class="form-control col-lg-8"
+                                    placeholder="Dupontdupont@Moulinsart.com"
+                            />
+                        </div>
+                        <div class="form-row form-group">
+                            <label for="mdp" class="col-lg-4"> Mot de passe</label>
+                            <input
+                                    type="text"
+                                    name="mdp"
+                                    id="mdp"
+                                    class="form-control col-lg-8"
+                                    placeholder="votre mot de passe"
+                            />
+                        </div>
+                        <div class="form-row form-group">
+                            <label for="valiMdp" class="col-lg-4">
+                                Validation de Mot de passe</label
+                            >
+                            <input
+                                    type="text"
+                                    name="valiMdp"
+                                    id="valiMdp"
+                                    class="form-control col-lg-8"
+                                    placeholder="validation votre mot de passe"
+                            />
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <p>
+                            En m'inscrivant je confirme avoir lu et accepté les Termes &
+                            Conditions et Politique de Confidentialité de Rezany. Je
+                            confirme avoir au moins 18 ans.
+                        </p>
+                        <div class="from-row from-group test">
+                            <a href="{{ path('home_index') }}">Inscription</a>
+                        </div>
+                    </fieldset>
+                </form>
+            </article>
+        </section>
+    </div>
+{% endblock %}

@@ -4,7 +4,7 @@
 
 {% block stylesheets %}
 
-    <link rel="stylesheet" href="../front/Css/Dashbord.css" />
+    <link rel="stylesheet" href="{{ asset('../front/Css/Dashbord.css') }}" />
 
 {% endblock %}
 
@@ -14,13 +14,12 @@
     <div class="sidebar">
         <div class="nav-dashbord">
             <ul>
-                <li class="active"><a href="DashboardUser.html"> Dashboard </a></li>
-                <li><a href="DashboardHistory.html">Historique</a></li>
-                <li><a href="DashboardNotif.html">Notification</a></li>
-                <li>
-                    <a href="DashboardSecu.html"
-                    >Confidentialité / sécurité</a
-                    >
+                <li class="active"><a href="{{ path('dashboard_user_index') }}"> Dashboard </a></li>
+                <li><a href="{{ path('dashboard_history_index') }}">Historique</a></li>
+                <li><a href="{{ path('dashboard_notification_index') }}">Notification</a></li>
+                <li><a href="{{ path('dashboard_securiter_index') }}">
+                        Confidentialité / sécurité
+                    </a>
                 </li>
             </ul>
         </div>
@@ -56,7 +55,7 @@
                 <div class="panel-head">Modification du profil</div>
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
-                        <a type="button" href="DashboardSecu.html">
+                        <a type="button" href="{{ path('dashboard_securiter_index') }}">
                             Demande d modification
                         </a>
                     </div>
