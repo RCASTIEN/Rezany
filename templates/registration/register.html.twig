@@ -1,21 +1,38 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Register{% endblock %}
+{% block title %}Inscription{% endblock %}
+
+{% block stylesheets %}
+
+    <link rel="stylesheet" href="{{ asset('../front/Css/Registration.css') }}" />
+
+{% endblock %}
 
 {% block body %}
     {% for flashError in app.flashes('verify_email_error') %}
         <div class="alert alert-danger" role="alert">{{ flashError }}</div>
     {% endfor %}
-
-    <h1>Register</h1>
-
+    <section>
+        <article class="login-logout">
+            <div class="col-lg-6">
     {{ form_start(registrationForm) }}
-        {{ form_row(registrationForm.email) }}
-        {{ form_row(registrationForm.plainPassword, {
-            label: 'Password'
-        }) }}
-        {{ form_row(registrationForm.agreeTerms) }}
+                <div class="form-row form-group">
+                    {{ form_row(registrationForm.email) }}
+                </div>
+                <div class="form-row form-group">
+                    {{ form_row(registrationForm.plainPassword, {
+                        label: 'Password'
+                    }) }}
+                </div>
+                <div class="form-row form-group">
+                    {{ form_row(registrationForm.agreeTerms) }}
+                </div>
 
-        <button type="submit" class="btn">Register</button>
+                <div class="from-row from-group test">
+                    <button type="submit" class="bouttoninscription">Inscription</button>
+                </div>
     {{ form_end(registrationForm) }}
+            </div>
+        </article>
+    </section>
 {% endblock %}
