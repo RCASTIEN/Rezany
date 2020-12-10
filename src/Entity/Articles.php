@@ -28,7 +28,7 @@ class Articles
     private $description;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="string", length=255, nullable=true)
      */
     private $categorie;
 
@@ -38,7 +38,7 @@ class Articles
     private $prix;
 
     /**
-     * @ORM\Column(type="text")
+     * @ORM\Column(type="text", nullable=true)
      */
     private $image;
 
