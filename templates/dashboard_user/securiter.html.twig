@@ -24,40 +24,10 @@
         <div class="container">
             <div class="main-dashbord">
                 <h1 class="mt-4">Dashboard Compte / sécurité</h1>
+
+
                 <div class="panel-wrapper">
-                    <div class="panel-head">Nom</div>
-                    <div class="input-group mb-3">
-                        <input
-                                type="text"
-                                class="form-control"
-                                placeholder="Nom actuelle"
-                                aria-label="Nom actuelle"
-                                aria-describedby="basic-addon2"
-                        />
-                        <div class="input-group-prepend">
-                            <button class="btn btn-outline-secondary" type="button">
-                                Validation
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="panel-wrapper">
-                    <div class="panel-head">Prénom</div>
-                    <div class="input-group mb-3">
-                        <input
-                                type="text"
-                                class="form-control"
-                                placeholder={{ app.user.prenom }}
-                                aria-label="prenom"
-                                aria-describedby="basic-addon2"
-                        />
-                        <div class="input-group-prepend">
-                            <button class="btn btn-outline-secondary" type="button">
-                                Validation
-                            </button>
-                        </div>
-                    </div>
-                </div>
+                    {{ form(form) }}
                 <div class="panel-wrapper">
                     <div class="panel-head">Email</div>
                     <div class="input-group mb-3">
@@ -68,11 +38,6 @@
                                 aria-label="Email actuelle"
                                 aria-describedby="basic-addon2"
                         />
-                        <div class="input-group-prepend">
-                            <button class="btn btn-outline-secondary" type="button">
-                                Validation
-                            </button>
-                        </div>
                     </div>
                 </div>
                 <div class="panel-wrapper">
@@ -85,103 +50,12 @@
                                 aria-label="Mot de passe actuelle"
                                 aria-describedby="basic-addon2"
                         />
-                        <div class="input-group-prepend">
-                            <button class="btn btn-outline-secondary" type="button">
-                                Validation
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="panel-wrapper">
-                    <div class="panel-head">Changer d mot de passe</div>
-                    <div class="input-group mb-3">
-                        <input
-                                type="password"
-                                class="form-control"
-                                placeholder="Nouveau mot de passe"
-                                aria-label="Nouveau mot de passe"
-                                aria-describedby="basic-addon2"
-                        />
-                        <div class="input-group-prepend">
-                            <button class="btn btn-outline-secondary" type="button">
-                                Validation
-                            </button>
-                        </div>
                     </div>
                 </div>
 
-                <h3 class="mt-4">Détail du compte</h3>
 
-                <div class="panel-wrapper">
-                    <div class="panel-head">Rue</div>
-                    <div class="input-group mb-3">
-                        <input
-                                type="text"
-                                class="form-control"
-                                placeholder="2 rue de Laplace"
-                                aria-label="Adresse"
-                                aria-describedby="basic-addon2"
-                        />
-                        <div class="input-group-prepend">
-                            <button class="btn btn-outline-secondary" type="button">
-                                Validation
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="panel-wrapper">
-                    <div class="panel-head">Code postal</div>
-                    <div class="input-group mb-3">
-                        <input
-                                type="number"
-                                class="form-control"
-                                placeholder="59160"
-                                aria-label="cp"
-                                aria-describedby="basic-addon2"
-                        />
-                        <div class="input-group-prepend">
-                            <button class="btn btn-outline-secondary" type="button">
-                                Validation
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="panel-wrapper">
-                    <div class="panel-head">Département</div>
-                    <div class="input-group mb-3">
-                        <input
-                                type="text"
-                                class="form-control"
-                                placeholder="Nord"
-                                aria-label="département"
-                                aria-describedby="basic-addon2"
-                        />
-                        <div class="input-group-prepend">
-                            <button class="btn btn-outline-secondary" type="button">
-                                Validation
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="panel-wrapper">
-                    <div class="panel-head">Ville</div>
-                    <div class="input-group mb-3">
-                        <input
-                                type="text"
-                                class="form-control"
-                                placeholder="Lille"
-                                aria-label="ville"
-                                aria-describedby="basic-addon2"
-                        />
-                        <div class="input-group-prepend">
-                            <button class="btn btn-outline-secondary" type="button">
-                                Validation
-                            </button>
-                        </div>
-                    </div>
-                </div>
                 <div class="from-row from-group modification">
-                    <a href="{{ path('home_index') }}">Modification</a>
+                    <a href="{{ path('home_index') }}">Retoure</a>
                 </div>
                 {% if is_granted('ROLE_ADMIN') %}
                 <h3 class="mt-4">Supprimer le compte</h3>

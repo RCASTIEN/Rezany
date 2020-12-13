@@ -59,11 +59,13 @@ class DashboardUserController extends AbstractController
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->persist($profil);
             $entityManager->flush();
+            $this->addFlash('message', 'Profil mise à jour');
 
-            return $this->redirectToRoute('profils');
+            return $this->redirectToRoute('dashboard_securiter_index');
         }
 
         return $this->render('dashboard_user/securiter.html.twig', [
+            'form' => $form->createView()
 
         ]);
     }

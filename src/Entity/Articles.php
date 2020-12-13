@@ -3,6 +3,8 @@
 namespace App\Entity;
 
 use App\Repository\ArticlesRepository;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -41,6 +43,16 @@ class Articles
      * @ORM\Column(type="text", nullable=true)
      */
     private $image;
+
+    /**
+     * @ORM\OneToMany(targetEntity=Images::class, mappedBy="aticles_image")
+     */
+    private $images;
+
+    public function __construct()
+    {
+        $this->images = new ArrayCollection();
+    }
 
     public function getId(): ?int
     {
@@ -103,6 +115,36 @@ class Articles
     public function setImage(string $image): self
     {
         $this->image = $image;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|Images[]
+     */
+    public function getImages(): Collection
+    {
+        return $this->images;
+    }
+
+    public function addImage(Images $image): self
+    {
+        if (!$this->images->contains($image)) {
+            $this->images[] = $image;
+            $image->setAticlesImage($this);
+        }
+
+        return $this;
+    }
+
+    public function removeImage(Images $image): self
+    {
+        if ($this->images->removeElement($image)) {
+            // set the owning side to null (unless already changed)
+            if ($image->getAticlesImage() === $this) {
+                $image->setAticlesImage(null);
+            }
+        }
 
         return $this;
     }

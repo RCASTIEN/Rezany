@@ -37,6 +37,11 @@ class Adresse
      */
     private $ville;
 
+    /**
+     * @ORM\OneToOne(targetEntity=User::class, mappedBy="adresse", cascade={"persist", "remove"})
+     */
+    private $nom_adresse;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -86,6 +91,28 @@ class Adresse
     public function setVille(string $ville): self
     {
         $this->ville = $ville;
+
+        return $this;
+    }
+
+    public function getNomAdresse(): ?User
+    {
+        return $this->nom_adresse;
+    }
+
+    public function setNomAdresse(?User $nom_adresse): self
+    {
+        // unset the owning side of the relation if necessary
+        if ($nom_adresse === null && $this->nom_adresse !== null) {
+            $this->nom_adresse->setAdresse(null);
+        }
+
+        // set the owning side of the relation if necessary
+        if ($nom_adresse !== null && $nom_adresse->getAdresse() !== $this) {
+            $nom_adresse->setAdresse($this);
+        }
+
+        $this->nom_adresse = $nom_adresse;
 
         return $this;
     }

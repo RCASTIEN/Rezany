@@ -51,6 +51,11 @@ class User implements UserInterface
      */
     private $date_naissance;
 
+    /**
+     * @ORM\OneToOne(targetEntity=Adresse::class, inversedBy="nom_adresse", cascade={"persist", "remove"})
+     */
+    private $adresse;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -161,6 +166,18 @@ class User implements UserInterface
     public function setDateNaissance(\DateTimeInterface $date_naissance): self
     {
         $this->date_naissance = $date_naissance;
+
+        return $this;
+    }
+
+    public function getAdresse(): ?Adresse
+    {
+        return $this->adresse;
+    }
+
+    public function setAdresse(?Adresse $adresse): self
+    {
+        $this->adresse = $adresse;
 
         return $this;
     }
