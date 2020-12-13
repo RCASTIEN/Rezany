@@ -1,0 +1,11 @@
+{{ form_start(form) }}
+    {{ form_widget(form) }}
+
+    {% for image in article.image %}
+        <di>
+        <img src="{{ asset('front/Img/Upload/' ~ image.nom_image) }}" alt="Image" width="150" height="150">
+        </di>
+    {% endfor %}
+
+    <button class="btn">{{ button_label|default('Save') }}</button>
+{{ form_end(form) }}

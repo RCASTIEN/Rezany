@@ -1,48 +1,44 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello ArticlesController!{% endblock %}
-
-{% block stylesheets %}
-    <link rel="stylesheet" href="{{ asset('../front/Css/Article.css') }}"/>
-{% endblock %}
+{% block title %}Articles index{% endblock %}
 
 {% block body %}
-    <div class="box1">
-        <div class="card">
-            <a href="{{ path('articles_description') }}">
-                <img
-                        src="https://chapeau.bon-clic-bon-genre.fr/photo/folar4_191101161334.jpg"
-                        class="card-img-top" alt="article"
-                />
-            </a>
-            <div class="card-body">
-                <h5 class="card-title">Chapeau</h5>
-                <p class="card-text">50$</p>
-            </div>
-        </div>
-        <div class="card">
-            <a href="{{ path('articles_description') }}">
-                <img
-                        src="https://media.idkids.fr/media/productstorage/images/okaidi/0087924/thumbs/0155945_800.jpg"
-                        class="card-img-top" alt="article"
-                />
-            </a>
-            <div class="card-body">
-                <h5 class="card-title">Pantalon</h5>
-                <p class="card-text">25$</p>
-            </div>
-        </div>
-        <div class="card">
-            <a href="{{ path('articles_description') }}">
-                <img
-                        src="https://www.cdiscount.com/pdt2/8/7/7/1/700x700/mp16077877/rw/manteau-camel-mi-long-a-col-revers.jpg"
-                        class="card-img-top" alt="article"
-                />
-            </a>
-            <div class="card-body">
-                <h5 class="card-title">Manteau</h5>
-                <p class="card-text">70$</p>
-            </div>
-        </div>
-    </div>
+    <h1>Articles index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nom_article</th>
+                <th>Description</th>
+                <th>Categorie</th>
+                <th>Prix</th>
+                <th>Image</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for article in articles %}
+            <tr>
+                <td>{{ article.id }}</td>
+                <td>{{ article.nomArticle }}</td>
+                <td>{{ article.description }}</td>
+                <td>{{ article.categorie }}</td>
+                <td>{{ article.prix }}</td>
+                <std> <img src="{{ asset('front/Img/Upload/' ~ article.image) }}" alt="Image" width="150" height="150"></std>
+
+                <td>
+                    <a href="{{ path('articles_show', {'id': article.id}) }}">show</a>
+                    <a href="{{ path('articles_edit', {'id': article.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="7">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('articles_new') }}">Create new</a>
 {% endblock %}

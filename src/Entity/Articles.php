@@ -45,7 +45,7 @@ class Articles
     private $image;
 
     /**
-     * @ORM\OneToMany(targetEntity=Images::class, mappedBy="aticles_image")
+     * @ORM\OneToMany(targetEntity=Images::class, mappedBy="aticles_image", cascade={"persist"})
      */
     private $images;
 
