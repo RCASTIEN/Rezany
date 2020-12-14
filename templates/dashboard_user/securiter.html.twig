@@ -1,0 +1,70 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello DashboardUserController!{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('../front/Css/Dashbord.css') }}" />
+{% endblock %}
+{% block body %}
+    <section class="container-fluid">
+        <div class="nav-btn">Menu</div>
+        <div class="sidebar">
+            <div class="nav-dashbord">
+                <ul>
+                    <li class="active"><a href="{{ path('dashboard_user_index') }}"> Dashboard </a></li>
+                    <li><a href="{{ path('dashboard_history_index') }}">Historique</a></li>
+                    <li><a href="{{ path('dashboard_notification_index') }}">Notification</a></li>
+                    <li><a href="{{ path('dashboard_securiter_index') }}">
+                            Confidentialité / sécurité
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="main-dashbord">
+                <h1 class="mt-4">Dashboard Compte / sécurité</h1>
+
+
+                <div class="panel-wrapper">
+                    {{ form(form) }}
+                <div class="panel-wrapper">
+                    <div class="panel-head">Email</div>
+                    <div class="input-group mb-3">
+                        <input
+                                type="email"
+                                class="form-control"
+                                placeholder="Email actuelle"
+                                aria-label="Email actuelle"
+                                aria-describedby="basic-addon2"
+                        />
+                    </div>
+                </div>
+                <div class="panel-wrapper">
+                    <div class="panel-head">Mot de passe</div>
+                    <div class="input-group mb-3">
+                        <input
+                                type="password"
+                                class="form-control"
+                                placeholder="Mot de passe actuelle"
+                                aria-label="Mot de passe actuelle"
+                                aria-describedby="basic-addon2"
+                        />
+                    </div>
+                </div>
+
+
+                <div class="from-row from-group modification">
+                    <a href="{{ path('home_index') }}">Retoure</a>
+                </div>
+                {% if is_granted('ROLE_ADMIN') %}
+                <h3 class="mt-4">Supprimer le compte</h3>
+                <div class="from-row from-group modification">
+                    <a href="{{ path('home_index') }}">Supprimer</a>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

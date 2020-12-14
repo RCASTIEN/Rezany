@@ -1,0 +1,112 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Welcome!{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{ asset('../front/Css/bootstrap.min.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('../front/Css/Header.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('../front/Css/Footer.css') }}"/>
+    {% block stylesheets %}
+    {% endblock %}
+</head>
+    <body>
+        <header>
+            <div class="logo">
+                <a href="{{ path('home_index') }}"><img src="{{ asset('../front/Img/Rezanylog.png') }}" alt="logo"></a>
+            </div>
+            <nav class="navbar navbar-expand-md navbar-light">
+                <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#basicExampleNav1"
+                        aria-controls="basicExampleNav1"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="basicExampleNav1">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="{{ path('articles_index') }}">Hommes</a></li>
+                        <li class="breadcrumb-item"><a href="{{ path('articles_index') }}">Femmes</a></li>
+                        <li class="breadcrumb-item active"><a href="{{ path('articles_index') }}">Enfants</a></li>
+                        <li class="breadcrumb-item active"><a href="{{ path('articles_index') }}">Maison</a></li>
+                    </ol>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="{{ path('panier_index') }}" class="nav-link navbar-link-2 waves-effect">
+                  <span class="badge badge-pill red">
+                      <img src="{{ asset('../front/Img/panier.png') }}" /></span>
+                                <i class="fas fa-shopping-cart pl-0"></i>
+                            </a>
+                        </li>
+                        {% if not app.user %}
+                        <li class="nav-item">
+                            <a href="{{ path('app_login') }}" class="nav-link waves-effect"> Connexion </a>
+                        </li>
+                        <li class="nav-item pl-2 mb-2 mb-md-0">
+                            <a
+                                    href="{{ path('app_register') }}"
+                                    type="button"
+                                    class="btn btn-outline-info btn-md btn-rounded btn-navbar waves-effect waves-light"
+                            >Inscription</a>
+                        </li>
+                        {% else %}
+                            <li class="nav-item">
+                                <a href="{{ path('dashboard_user_index') }}" class="nav-link waves-effect">Profil</a>
+                            </li>
+                            <li class="nav-item pl-2 mb-2 mb-md-0">
+                                <a
+                                        href="{{ path('app_logout') }}"
+                                        type="button"
+                                        class="btn btn-outline-info btn-md btn-rounded btn-navbar waves-effect waves-light">
+                                    Deconnexion
+                                </a>
+                            </li>
+
+                        {% endif %}
+                    </ul>
+                </div>
+            </nav>
+            <div >
+                <div class="navbar navbar-expand-md navbar-light">
+                    <!-- Collapse button -->
+                    <div class="navbarSearch">
+                        <form class="form-inline">
+                            <input
+                                    class="form-control mr-sm-2"
+                                    type="search"
+                                    placeholder="Search"
+                                    aria-label="Search"
+                            />
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                                Search
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </header>
+        {% block body %}
+        {% endblock %}
+        <footer>
+            <div class="pied">
+                <p class="f1">
+                    Copyright &copy 2020-2021 - tous les droits reserves
+                <div class="f3">
+                    <a id="p" href="">FAQ| </a>
+                    <a id="p" href=""> Contact| </a>
+                    <a id="p" href=""> Mentions Légales </a>
+                </div>
+                </p>
+            </div>
+        </footer>
+        {% block javascripts %}
+            <script src="../front/Js/jquery-3.5.1.js"></script>
+            <script src="../front/Js/bootstrap.min.js"></script>
+            <script src="../front/Js/popper.min.js"></script>
+            <script src="../front/Js/dashboard.js"></script>
+        {% endblock %}
+    </body>
+</html>

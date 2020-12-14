@@ -1,0 +1,68 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello DashboardUserController!{% endblock %}
+
+{% block stylesheets %}
+
+    <link rel="stylesheet" href="{{ asset('../front/Css/Dashbord.css') }}" />
+
+{% endblock %}
+
+{% block body %}
+    <section class="container-fluid">
+    <div class="nav-btn">Menu</div>
+    <div class="sidebar">
+        <div class="nav-dashbord">
+            <ul>
+                <li class="active"><a href="{{ path('dashboard_user_index') }}"> Dashboard </a></li>
+                <li><a href="{{ path('dashboard_history_index') }}">Historique</a></li>
+                <li><a href="{{ path('dashboard_notification_index') }}">Notification</a></li>
+                <li><a href="{{ path('dashboard_securiter_index') }}">
+                        Confidentialité / sécurité
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="main-dashbord">
+            <h1 class="mt-4">Dashboard Historique</h1>
+
+            {% if is_granted('ROLE_ADMIN') %}
+                <h3 class="mt-4">Salut PatronAdmin voila la liste des utilisateurs inscrit</h3>
+
+                <article class="center">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th scope="col">Id</th>
+                            <th scope="col">email</th>
+                            <th scope="col">Nom</th>
+                            <th scope="col">Prenom</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for user in users %}
+                            <tr>
+                                <th scope="row"> {{ user.id }} </th>
+                                <td>{{ user.email }}</td>
+                                <td>{{ user.nom }}</td>
+                                <td>{{ user.prenom }}</td>
+
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </article>
+
+            {% endif %}
+            <h3 class="mt-4">Dernier achat de {{ app.user.nom }} </h3>
+            <div class="panel-wrapper">
+                <div class="panel-head">Name</div>
+                <p class="panel-body">historique de l'achat...</p>
+            </div>
+        </div>
+    </div>
+    </section>
+
+{% endblock %}
