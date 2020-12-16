@@ -41,6 +41,7 @@
                                 <i class="fas fa-shopping-cart pl-0"></i>
                             </a>
                         </li>
+                        {% if not app.user %}
                         <li class="nav-item">
                             <a href="{{ path('app_login') }}" class="nav-link waves-effect"> Connexion </a>
                         </li>
@@ -51,6 +52,20 @@
                                     class="btn btn-outline-info btn-md btn-rounded btn-navbar waves-effect waves-light"
                             >Inscription</a>
                         </li>
+                        {% else %}
+                            <li class="nav-item">
+                                <a href="{{ path('dashboard_user_index') }}" class="nav-link waves-effect">Profil</a>
+                            </li>
+                            <li class="nav-item pl-2 mb-2 mb-md-0">
+                                <a
+                                        href="{{ path('app_logout') }}"
+                                        type="button"
+                                        class="btn btn-outline-info btn-md btn-rounded btn-navbar waves-effect waves-light">
+                                    Deconnexion
+                                </a>
+                            </li>
+
+                        {% endif %}
                     </ul>
                 </div>
             </nav>

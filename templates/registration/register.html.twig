@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Register{% endblock %}
+{% block title %}Inscription{% endblock %}
 
 {% block stylesheets %}
 
@@ -12,36 +12,27 @@
     {% for flashError in app.flashes('verify_email_error') %}
         <div class="alert alert-danger" role="alert">{{ flashError }}</div>
     {% endfor %}
+    <section>
+        <article class="login-logout">
+            <div class="col-lg-6">
+    {{ form_start(registrationForm) }}
+                <div class="form-row form-group">
+                    {{ form_row(registrationForm.email) }}
+                </div>
+                <div class="form-row form-group">
+                    {{ form_row(registrationForm.plainPassword, {
+                        label: 'Password'
+                    }) }}
+                </div>
+                <div class="form-row form-group">
+                    {{ form_row(registrationForm.agreeTerms) }}
+                </div>
 
-
-
-<section>
-    <article class="login-logout">
-    <form class="col-lg-6">
-        {{ form_start(registrationForm) }}
-        <fieldset>
-            <div class="form-row form-group">
-            {{ form_row(registrationForm.email) }}
+                <div class="from-row from-group test">
+                    <button type="submit" class="bouttoninscription">Inscription</button>
+                </div>
+    {{ form_end(registrationForm) }}
             </div>
-        </fieldset>
-        <fieldset>
-            <div class="form-row form-group">
-            {{ form_row(registrationForm.plainPassword, {
-                label: 'Password'
-            }) }}
-            </div>
-            <div class="form-row form-group">
-            {{ form_row(registrationForm.agreeTerms) }}
-            </div>
-        </fieldset>
-        <fieldset>
-            <div class="from-row from-group test">
-            <button type="submit" class="btn">Inscription</button>
-            </div>
-            {{ form_end(registrationForm) }}
-        </fieldset>
-    </form>
-    </article>
-</section>
-
+        </article>
+    </section>
 {% endblock %}

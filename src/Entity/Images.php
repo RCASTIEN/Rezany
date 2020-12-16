@@ -44,7 +44,7 @@ class Images
 
         return $this;
     }
-
+  
     public function getAnnonces(): ?Annonces
     {
         return $this->annonces;

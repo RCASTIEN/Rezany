@@ -8,7 +8,7 @@
   justify-content: center;
 }
 
-.test a {
+button .bouttoninscription {
   color: white;
   background-color: darkcyan;
   text-decoration: none;
@@ -20,13 +20,13 @@
   margin: 15px;
 }
 
-.test a:hover {
+button .bouttoninscription:hover {
   color: white;
   background-color: cadetblue;
   text-decoration: none;
 }
 
-.breadcrumb-item + .breadcrumb-item::before 
+.breadcrumb-item + .breadcrumb-item::before
 
 {
     content: none;
