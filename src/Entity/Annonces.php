@@ -35,6 +35,11 @@ class Annonces
      */
     private $images;
 
+    /**
+     * @ORM\Column(type="integer", nullable=true)
+     */
+    private $prices;
+
     public function __construct()
     {
         $this->images = new ArrayCollection();
@@ -98,6 +103,18 @@ class Annonces
                 $image->setAnnonces(null);
             }
         }
+
+        return $this;
+    }
+
+    public function getPrices(): ?int
+    {
+        return $this->prices;
+    }
+
+    public function setPrices(?int $prices): self
+    {
+        $this->prices = $prices;
 
         return $this;
     }
