@@ -18,41 +18,41 @@ class Images
     private $id;
 
     /**
-     * @ORM\Column(type="string", length=255, nullable=true)
+     * @ORM\Column(type="string", length=255)
      */
-    private $nom_image;
+    private $name;
 
     /**
-     * @ORM\ManyToOne(targetEntity=Articles::class, inversedBy="images")
+     * @ORM\ManyToOne(targetEntity=Annonces::class, inversedBy="images")
      * @ORM\JoinColumn(nullable=false)
      */
-    private $aticles_image;
+    private $annonces;
 
     public function getId(): ?int
     {
         return $this->id;
     }
 
-    public function getNomImage(): ?string
+    public function getName(): ?string
     {
-        return $this->nom_image;
+        return $this->name;
     }
 
-    public function setNomImage(?string $nom_image): self
+    public function setName(string $name): self
     {
-        $this->nom_image = $nom_image;
+        $this->name = $name;
 
         return $this;
     }
-
-    public function getAticlesImage(): ?Articles
+  
+    public function getAnnonces(): ?Annonces
     {
-        return $this->aticles_image;
+        return $this->annonces;
     }
 
-    public function setAticlesImage(?Articles $aticles_image): self
+    public function setAnnonces(?Annonces $annonces): self
     {
-        $this->aticles_image = $aticles_image;
+        $this->annonces = $annonces;
 
         return $this;
     }
