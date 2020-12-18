@@ -1,30 +1,41 @@
 {% extends 'base.html.twig' %}
-
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('../front/Css/Annonces.css') }}"/>
+{% endblock %}
 {% block title %}Annonces{% endblock %}
 
 {% block body %}
     <h1>Annonces</h1>
+    {% for image in annonce.images %}
+        <div class="box card mb-3" style="">
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                    <img src="{{ asset('/uploads/'~ image.name) }}" class="card-img ">
+                </div>
+                <div class=" box1 container col-md-8">
+                    <div class="card-body">
 
-    <table class="table">
-        <tbody>
-            <tr>
-                <th>Id</th>
-                <td>{{ annonce.id }}</td>
-            </tr>
-            <tr>
-                <th>Title</th>
-                <td>{{ annonce.title }}</td>
-            </tr>
-            <tr>
-                <th>Content</th>
-                <td>{{ annonce.content }}</td>
-            </tr>
-        </tbody>
-    </table>
+                        <p class="card-text">
+                        <p><em><strong>Numeros D'articles: </strong> </em> </br>
+                            <em>{{ annonce.id }}</em><br>
+                            <strong> <em>Nom Article</em></strong> </br>
+                            <em> {{ annonce.title }}</em></br>
+                            <strong> <em>Description </em></strong></br>
+                            <em>{{ annonce.content }}</em>
+                        </p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        <button type="button" class="btn btn-dark"> Ajouter au panier</button>
+                        <button type="button" class="btn btn-dark"> Ajouter au favoris</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+    <button type="button" class="btn btn-dark"><a href="{{ path('annonces_index') }}" class="lien">Retour à la liste</a>
+    </button>
+    {% if is_granted('ROLE_ADMIN') %}
+    <button type="button" class="btn btn-dark"><a href="{{ path('annonces_edit', {'id': annonce.id}) }}" class="lien">Modifier</a>
+    {% endif %}
+    </button>
 
-    <a href="{{ path('annonces_index') }}">back to list</a>
-
-    <a href="{{ path('annonces_edit', {'id': annonce.id}) }}">edit</a>
-
-    {{ include('annonces/_delete_form.html.twig') }}
 {% endblock %}

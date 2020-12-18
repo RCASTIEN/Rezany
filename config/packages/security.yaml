@@ -41,5 +41,4 @@ security:
          - { path: ^/admin, roles: ROLE_ADMIN }
          - { path: ^/profile, roles: ROLE_USER }
          - { path: ^/admin, roles: [ROLE_ADMIN, IS_AUTHENTICATED_ANONYMOUSLY] }
-         - { path: ^/dashboard/securiter, roles: ROLE_ADMIN }
          - { path: ^/panier, roles: [IS_AUTHENTICATED_FULLY] }

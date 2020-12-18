@@ -1,17 +1,21 @@
 {% extends 'base.html.twig' %}
-
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('../front/Css/Annonces.css') }}"/>
+{% endblock %}
 {% block title %}Annonces index{% endblock %}
 
 {% block body %}
-    <h1>Annonces index</h1>
+    <h1>Annonces</h1>
 
     <table class="table">
         <thead>
             <tr>
                 <th>Id</th>
-                <th>Title</th>
-                <th>Content</th>
-                <th>actions</th>
+                <th>Titre</th>
+                <th>Prix</th>
+                <th>Description</th>
+                <th>Image</th>
+                <th>Modif</th>
             </tr>
         </thead>
         <tbody>
@@ -19,19 +23,25 @@
             <tr>
                 <td>{{ annonce.id }}</td>
                 <td>{{ annonce.title }}</td>
+                <td>{{ annonce.prices }}</td>
                 <td>{{ annonce.content }}</td>
+                {% for image in annonce.images %}
+                    <td> <img src="{{ asset('/uploads/'~ image.name) }}" class="images card-img" ></td>
+                {% endfor %}
                 <td>
-                    <a href="{{ path('annonces_show', {'id': annonce.id}) }}">show</a>
-                    <a href="{{ path('annonces_edit', {'id': annonce.id}) }}">edit</a>
+                    <button type="button" class="btn btn-dark"><a href="{{ path('annonces_show', {'id': annonce.id}) }}" class="lien" >Voir</a></button>
+                    {% if is_granted('ROLE_ADMIN') %}
+                    <button type="button" class="btn btn-dark"><a href="{{ path('annonces_edit', {'id': annonce.id}) }}" class="lien" >Edition</a></button>
+                    {% endif %}
                 </td>
             </tr>
         {% else %}
             <tr>
-                <td colspan="4">no records found</td>
+                <td colspan="4">il n'y a rien</td>
             </tr>
         {% endfor %}
         </tbody>
     </table>
 
-    <a href="{{ path('annonces_new') }}">Create new</a>
+    <button type="button" class="btn btn-dark"><a href="{{ path('annonces_new') }}" class="lien">Nouvelle article</a></button>
 {% endblock %}

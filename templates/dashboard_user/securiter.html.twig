@@ -28,34 +28,11 @@
 
                 <div class="panel-wrapper">
                     {{ form(form) }}
-                <div class="panel-wrapper">
-                    <div class="panel-head">Email</div>
-                    <div class="input-group mb-3">
-                        <input
-                                type="email"
-                                class="form-control"
-                                placeholder="Email actuelle"
-                                aria-label="Email actuelle"
-                                aria-describedby="basic-addon2"
-                        />
-                    </div>
-                </div>
-                <div class="panel-wrapper">
-                    <div class="panel-head">Mot de passe</div>
-                    <div class="input-group mb-3">
-                        <input
-                                type="password"
-                                class="form-control"
-                                placeholder="Mot de passe actuelle"
-                                aria-label="Mot de passe actuelle"
-                                aria-describedby="basic-addon2"
-                        />
-                    </div>
                 </div>
 
 
                 <div class="from-row from-group modification">
-                    <a href="{{ path('home_index') }}">Retoure</a>
+                    <a href="{{ path('home_index') }}">Retour</a>
                 </div>
                 {% if is_granted('ROLE_ADMIN') %}
                 <h3 class="mt-4">Supprimer le compte</h3>
